@@ -3,9 +3,9 @@ from time import sleep
 from threading import Thread
 from SmartContract.read import read
 from SmartContract.write import write
-from os import system, path
+from os import system, path, _exit
 from queue import Queue
-from sys import exit
+import sys
 
 def menu():
     print("1) Start Mining")
@@ -42,22 +42,23 @@ while True:
     inp = menu()
    
     if inp == 1 and started:
-        print("Error: Mining already working.")
+        print("Mining already working.")
         continue
     
     if inp == 1:
         print('Starting Mining')
         t = Thread(target=mining)
         t.start()
-        print('Mining Started',t.isAlive())
+        print('Mining Started')
+        started = True
         sleep(4)
     elif inp == 2:
         count = int(input('Enter Number Of Records: '))
         reading(count)
-        sleep(4)
+        input()
     else:
         print('Exiting!')
-        exit()
+        _exit(1)
 
 
 
