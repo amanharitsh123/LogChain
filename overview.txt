@@ -1,0 +1,5 @@
+Components:
+1) Log Collectors
+2) SM writer
+3) SM reader
+4) Main File
