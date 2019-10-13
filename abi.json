@@ -3,14 +3,22 @@
 		"constant": false,
 		"inputs": [
 			{
+				"internalType": "uint256",
 				"name": "server_id",
 				"type": "uint256"
 			},
 			{
+				"internalType": "string",
+				"name": "typ",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
 				"name": "data",
 				"type": "string"
 			},
 			{
+				"internalType": "string",
 				"name": "timestamp",
 				"type": "string"
 			}
@@ -26,21 +34,31 @@
 		"inputs": [
 			{
 				"indexed": false,
+				"internalType": "uint256",
 				"name": "log_id",
 				"type": "uint256"
 			},
 			{
 				"indexed": false,
+				"internalType": "uint256",
 				"name": "server_id",
 				"type": "uint256"
 			},
 			{
 				"indexed": false,
+				"internalType": "string",
+				"name": "typ",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
 				"name": "data",
 				"type": "string"
 			},
 			{
 				"indexed": false,
+				"internalType": "string",
 				"name": "timestamp",
 				"type": "string"
 			}
@@ -54,6 +72,7 @@
 		"name": "logCount",
 		"outputs": [
 			{
+				"internalType": "uint256",
 				"name": "",
 				"type": "uint256"
 			}
@@ -66,6 +85,7 @@
 		"constant": true,
 		"inputs": [
 			{
+				"internalType": "uint256",
 				"name": "",
 				"type": "uint256"
 			}
@@ -73,18 +93,27 @@
 		"name": "logs",
 		"outputs": [
 			{
+				"internalType": "uint256",
 				"name": "log_id",
 				"type": "uint256"
 			},
 			{
+				"internalType": "uint256",
 				"name": "server_id",
 				"type": "uint256"
 			},
 			{
+				"internalType": "string",
+				"name": "typ",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
 				"name": "data",
 				"type": "string"
 			},
 			{
+				"internalType": "string",
 				"name": "timestamp",
 				"type": "string"
 			}

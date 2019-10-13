@@ -1,6 +1,6 @@
 import time
 from queue import Queue
-from file_monitor import file_monitor
+from .file_monitor import file_monitor
 from threading import Thread 
 
 # Logs to save:
@@ -12,7 +12,7 @@ from threading import Thread
 
 dic  = {
     'auth':'/var/log/auth.log',
-    'bash_history':'~/.bash_history',
+    'bash_history':'/home/amanharitsh/.bash_history',
     'sys':'/var/log/syslog',
     'dmseg':'/var/log/dmesg'
 }
