@@ -15,6 +15,21 @@ def menu():
     inp = int(input())
     return inp
 
+def pre_menu():
+    print("1) Connect as a Node.")
+    print("2) Start New Blockchain.")
+
+    inp = int(input())
+    ip_addr = ""
+    if inp == 1:
+        ip_addr = input('Enter IP address of Genesis Node:')
+    else:
+        print('Start Ganache on 0.0.0.0 and hit enter.')
+        ip_addr = "0.0.0.0"
+    
+    return "http://" + ip_addr + ":" + "7545"
+
+
 
 def mining():
     q = Queue()
@@ -30,11 +45,12 @@ def reading(count):
 
 print("WELCOME TO LogChain!")
 
+ganache_url = pre_menu()
+
 started = False
-ganache_url = 'http://127.0.0.1:7545'
 path_to_abi = path.abspath('abi.json')
 address = "0x490E92418a235eA728A6d11541b185F850929B9f"
-server_id = 123
+server_id = 3333
 
 while True:
     
