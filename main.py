@@ -33,7 +33,7 @@ print("WELCOME TO LogChain!")
 started = False
 ganache_url = 'http://127.0.0.1:7545'
 path_to_abi = path.abspath('abi.json')
-address = "0xE971e88b6Cf30d21F1A62D6296ecf6D56924C5Ad"
+address = "0x490E92418a235eA728A6d11541b185F850929B9f"
 server_id = 123
 
 while True:
