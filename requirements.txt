@@ -28,7 +28,7 @@ multiaddr==0.0.8
 netaddr==0.7.19
 parsimonious==0.8.1
 pathtools==0.1.2
-protobuf==3.10.0
+protobuf==3.18.3
 pycryptodome==3.9.0
 pyinotify==0.9.6
 pylint==2.4.2
